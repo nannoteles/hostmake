@@ -1,9 +1,9 @@
 name: BuildHostMake
 
 on:
-    workflow_dispatch:
+  workflow_dispatch:
     inputs:
-      tag-name:
+      tagname:
         description: 'Tag'
         required: true
         default: ''
@@ -39,8 +39,8 @@ jobs:
       with:
         draft: false
         prerelease: false
-        tag_name: ${{ github.event.inputs.name }}
-        release_name: ${{ github.event.inputs.name }}
+        tag_name: ${{ github.event.inputs.tagname }}
+        release_name: ${{ github.event.inputs.tagename }}
     - name: upload windows artifact
       uses: actions/upload-release-asset@v1
       env:
