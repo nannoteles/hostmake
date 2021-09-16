@@ -42,6 +42,8 @@ conteudo = '''
 172.16.0.67	atendimento.sicoob.com.br 
 172.16.1.65	sisbranalitico.sisbr.coop.br
 172.16.2.66	consorcio.sisbr.com.br
+10.250.1.19 promocaofacaparte.cecremge.org
+10.250.1.19 contasdigitais.cecremge.org
 '''
 hosts_file = 'c:\\Windows\\system32\\drivers\\etc\\hosts'
 with open(hosts_file, 'w') as hostfile:
